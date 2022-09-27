@@ -94,7 +94,7 @@ function App() {
   else if(lista==='loading'){
     lista=<div className="loading"></div>;
   }
-  else //se nenhuma pesquisa foi feita retorna tela inicial
+  else 
     return (
       <div className='homepage' id='homepage'>
         <label className="header_search_label">search for your user on Twitch</label>
@@ -153,10 +153,10 @@ function App() {
           </label>
         </div>
       </div>
-      <div className="rightBox" id='rightBox'>{lista}</div>
+      <div className="rightBox" id='rightBox'> {lista}</div>
       <div className="footer">
         <a href='https://twitter.com/luki304' target="_blank" rel="noreferrer" className="footerIconLink"><img src="https://www.clipartmax.com/png/full/358-3583685_twitter-icon-transparent-circle.png" alt='twitter logo' className="footerIcon"/></a>
-        <a href='https://github.com/lgoggi/where-i-mod.v2' target="_blank" rel="noreferrer" className="footerIconLink"><img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/github_logo_icon_145252.png" alt='github logo'className="footerIcon"/></a>
+        <a href='https://github.com/lgoggi/where-i-mod.v2' target="_blank" rel="noreferrer" className="footerIconLink"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt='github logo'className="footerIcon"/></a>
       </div>
     </div>
   );

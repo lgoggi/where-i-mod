@@ -411,20 +411,50 @@
     margin: 0;
     justify-self: center;
   }
+  .leftBox_filtros{
+    flex-direction: row;
+  }
   .topBar{
-    padding: 15px 15px 15px 15px;
+    display: grid;
+    grid-template-columns: 1 1;
+    grid-template-rows: 1;
+    grid-template-areas: 
+    "search selecionar";
+    border: none;
+    padding: none;
+    margin: none;
     min-width: 97vw;
   }
+  .topBar_inner_search{
+    grid-area: search;
+  }
+  .topBar_selecionar {
+    display: flex;
+    flex-direction: row;
+    grid-area: selecionar;
+  
+  }
+  .showing{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+  
   .rightBox{
+    justify-content: space-evenly;
     min-width: 97vw;
   }
-  .topBar_selecionar{
-    margin-left: auto;
+
+  .rightBox-card-click{
+    margin: 0 1.5rem 3rem 1.5rem;
   }
+
   .footer{
     height: 5vh;
   }
   .footerIconLink{
+    height: 4vh;
     width: 30px;
     border-radius: 50%;
   }
